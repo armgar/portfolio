@@ -1,73 +1,96 @@
 html,
 body {
     font-family: 'Droid Serif', serif;
-    background-color: #333399;
     color: #ecf0f1;
 	font-weight: 400;
     text-rendering: optimizeLegibility;
     padding-top: 20px;
-}
-
-.container {
-    background-color: #333399;
+    background: #333399; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#333399, #12124c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333399, #12124c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333399, #12124c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333399, #12124c); /* Standard syntax */
 }
 
 /* Images and icons */
 .img {}
 
 .hero {
-    margin: 10px auto;
-    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+hr {
+    border: 2px dashed #333399;
+    width: 90%;
+}
+
+#socmedia {
+    margin: 20px auto;
 }
 
 .social-icons,
 a.social-icons:link,
 a.social-icons:visited {
-    color: #ff6633;
+    color: #fdff1d;
     display: inline; 
-    font-size: 250%;
+    font-size: 200%;
     text-decoration: none;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-/* White space and additional margins */
-.white-space {
-	margin: 5% auto;
+a.social-icons:hover,
+a.social-icons:active {
+    color: #ff6633;
+    text-decoration: none;
+    transition: 0.75s;
+}
+    
+/* Sections */
+#portfolio {
+    max-width: 90%;
 }
 
-/* Project sub-heading; text with margin space for grid */
-.grid-space {
-    font-size: 85%;
-	margin-bottom: 7.5%;
+.white-space {
+	margin: 25px auto;
 }
 
 /* Headings and typography */
-h4 {
-    font-style: italic;
-    margin-bottom: 5px;
-    padding-top: 2px;
-}
-
 h5 {
-	font-size: 125%;
+    font-size: 125%;
     letter-spacing: 0.5px;
-	line-height: 180%;
+    line-height: 160%;
 }
 
-.lead {
-	font-size: 125%;
+.intro {
+    font-size: 115%;
     letter-spacing: 0.5px;
-	line-height: 180%;
+    line-height: 160%;
+    margin: 5px auto;
 }
 
-.text-muted {
-	color: #ff6633;
-	font-size: 1.5em;
+.heading {
+    color: #fdff1d;
+    font-size: 1.5em;
     letter-spacing: 0.25px;
 }
 
+h4 {
+    font-size: 140%;
+    font-style: italic;
+    margin: 3% auto 1% auto;
+    padding-top: 2px;
+}
+
+.subhead {
+    font-size: 90%;
+    margin-bottom: 7.5%;
+}
+
 .footer {
+    padding-bottom: 15px;
+    padding-top: 15px; 
     font-size: 75%;
 }
 
@@ -79,23 +102,15 @@ h5 {
 	font-size: 90%;
 }
 
-.link-portfolio {
-	line-height: 1.75em;
-	font-size: 1.5em;
-}
-
 .text-logo,
-.text-logo:link,
-.text-logo:visited,
+a.text-logo:link,
+a.text-logo:visited,
 .link-contact,
-.link-contact:link,
-.link-contact:visited,
-.link-portfolio,
-.link-portfolio:link,
-.link-portfolio:visited,
+a.link-contact:link,
+a.link-contact:visited,
 .link-backtotop,
-.link-backtotop:link,
-.link-backtotop:visited {
+a.link-backtotop:link,
+a.link-backtotop:visited {
 	font-weight: 700;
 	color: #ecf0f1;
 	letter-spacing: 1px;
@@ -104,32 +119,202 @@ h5 {
 
 a.text-logo:hover,
 a.text-logo:active {
-	color: #ecf0f1;
-	text-decoration: none;
+    color: #ecf0f1;
+    text-decoration: none;
 }
 
 a.link-contact:hover,
 a.link-contact:active,
-a.link-portfolio:hover,
-a.link-portfolio:active,
 a.link-backtotop:hover,
 a.link-backtotop:active {
-	color: #ff6633;
-	font-style: italic;
-	text-decoration: underline;
+    color: #ff6633;
+    font-style: italic;
+    text-decoration: underline;
     transition: 0.75s;
 }
 
-/* Medium devices and landscape orientation (700px and up) */
-@media (min-width: 700px) {
-	h5,
-    .lead {
-		font-size: 150%;
-        line-height: 175%;
-        letter-spacing: 0.75px;
-	}
-    
-	nav {
-		font-size: 125%;
-	}
+.link-portfolio,
+a.link-portfolio:link,
+a.link-portfolio:visited,
+input[type=submit] {
+    color: #fdff1d;
+    font-weight: 700;
+    line-height: 1.75em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid #fdff1d;
+    border-radius: 2px;
+    padding: 15px 32px;
+    margin-bottom: 30px;
+    max-width: 200px;
 }
+
+a.link-portfolio:hover,
+a.link-portfolio:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    color: #ff6633;
+    border: 1px solid #ff6633;  
+    font-style: italic;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* Contact form */
+#form {
+    width: 90%;
+    margin: 40px auto 0px auto;
+}
+
+label {
+    font-style: italic;
+    font-size: 125%;    
+    padding-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    color: #ecf0f1;
+    border: none;
+    background-color: #12124c;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #333399;
+    outline: none;
+}
+
+input[type=submit]:focus {
+    background-color: #12124c;
+    outline: none;
+}
+
+#name,
+#email,
+#subject,
+#message {
+    color: #ecf0f1;
+    font-size: 120%;
+}
+
+/* iPhone 6 + below 376px */
+@media (max-width: 375px) {
+    h5,
+    .intro {
+        font-size: 105%;
+        letter-spacing: 0.25px;
+        line-height: 140%;
+    }
+
+    .link-portfolio,
+    a.link-portfolio:link,
+    a.link-portfolio:visited {
+        font-size: 1.25em;
+    }
+
+    .social-icons,
+    a.social-icons:link,
+    a.social-icons:visited {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    label {
+        font-size: 105%;
+    }
+
+    input,
+    select,
+    textarea {
+        margin-bottom: 20px;
+    }
+}
+
+/* iPad + 750px and up */
+@media (min-width: 750px) {
+    .heading {
+        font-size: 150%;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    #portfolio {
+        max-width: 80%;
+    }
+
+    h5,
+    .intro {
+        max-width: 85%;
+        margin: 5px auto;
+    }
+    
+    nav {
+        font-size: 125%;
+    }
+
+    #form {
+        width: 75%;
+    }
+
+    label {
+        font-size: 115%;
+    }
+
+    input,
+    select,
+    textarea {
+        margin-bottom: 40px;
+    }
+}
+
+/* Large devices (1000px and up) */
+@media (min-width: 1000px) {
+    h4 {
+        font-size: 175%;
+        letter-spacing: 1px;
+    }
+
+    .subhead {
+        font-size: 105%;
+    }
+
+    .heading {
+        font-size: 170%;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    #form {
+        max-width: 70%;
+    }
+
+    h5,
+    .intro {
+        width: 90%;
+    }
+
+    h5,
+    .intro,
+    label {
+        font-size: 130%;
+        letter-spacing: 1px;
+        line-height: 160%;
+    }
+
+}
+
+/*  Blue #333399
+    Dark Blue #12124c    
+    Warm Gray #ecf0f1   
+    Yellow #fdff1d  
+    Orange #ff6633  */

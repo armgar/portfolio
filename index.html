@@ -38,129 +38,194 @@
         <script src="js/script.js"></script>
     </head>
     <body>
-    	<div class="container" id="top">
+    	<div id="top">
             <header>
                 <nav class="navbar-fixed-top">
-                    <div class="container">
                         <div class="row nav">
-                            <div class="col-xs-6">
-                                <a href="#" class="text-logo">Armando Garcia</a>
-                            </div>
-                            <div class="col-xs-6 text-right">
-                                <a href="#" class="link-contact">Contact me</a>
-                            </div>
+                            <div class="container">
+                                <div class="col-xs-6">
+                                    <a href="#" class="text-logo">Armando Garcia</a>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#contact" class="link-contact">Contact me</a>
+                                </div>
+                            </div>    
+                        </div>
+                </nav>
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <picture>
+                                <source media="(min-width: 701px)" srcset="images/armandoone.jpg">
+                                <source media="(max-width: 700px)" srcset="images/armandotwo.jpg">
+                                <img src="images/armandotwo.jpg" alt="image of Armando" class="hero img-responsive center-block">
+                            </picture>
                         </div>
                     </div>
-                </nav>    
-                <div class="row">
-                    <div class="col-md-12">
-                        <picture>
-                            <source media="(min-width: 701px)" srcset="images/armandoone.jpg">
-                            <source media="(max-width: 700px)" srcset="images/armandotwo.jpg">
-                            <img src="images/armandotwo.jpg" alt="image of Armando" class="hero img-responsive center-block">
-                        </picture>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <a href="#work" class="link-portfolio">See my featured work</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <a href="#work" class="link-portfolio">See my featured work</a>
-                    </div>
-                </div>
+                </div>    
             </header>
-            <section>
+            <section class="container">
                 <div class="row text-center white-space">
                     <div class="col-md-12">
-                        <h5>Hello, world. My name is Armando Garcia and I am a visual designer and front end web developer.</h5><br>
-                        <p class="lead">In the summer of 2014, I graduated with a Communication Design degree. After completing internships, I became a Junior Designer at an agency that specializes in building brands with creative and public relations campaigns. I gained skills in art direction, print production, marketing and advertisement, meanwhile working with tight deadlines and a range of clients.<br><br>I currently reside in Austin, Texas. My latest goal is to complete Udacity's Front End Web Developer Nanodegree program. I am determined to add Front End Web Development to my skills set.
+                        <p class="intro">Hi, my name is Armando Garcia and I am a visual designer based in Austin, TX.<br><br>I graduated with a Communication Design degree in 2014. After completing internships, I worked as a Junior Designer at an agency that specializes in building brands with creative and public relations campaigns. I gained skills in art direction, advertisement, marketing, print and digital production, and wordpress, meanwhile working with tight deadlines and a range of clients.<br><br>My latest goal is to complete Udacity's Front-End Web Developer Nanodegree program. I am determined to add web development to my skills set.
                         </p>
                         <a href="#work" class="social-icons"><i class="ion-chevron-down"></i></a>
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <hr id="work">
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="row text-center">
+                    <hr id="work">
+                </div>
+            </div>
+            <section id="portfolio" class="container">
                     <div class="row white-space">
-                        <div class="col-md-12 text-center">
-                            <h2 class="text-muted">Featured Work</h2>
+                        <div class="col-xs-12 text-center">
+                            <h2 class="heading">Featured Work</h2>
                         </div>
                     </div>
                     <div class="row text-center white-space">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/snapshot-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/snapshot-cover-sm.jpg 1x, images/snapshot-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/snapshot-cover.jpg" alt="snapshot magazine project">
                             </picture>    
                             <h4>Snapshot Magazine</h4>
-                            <p class="grid-space">Branding and publication design</p>
+                            <p class="subhead">Branding and publication design</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/xoco-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/xoco-cover-sm.jpg 1x, images/xoco-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/xoco-cover.jpg" alt="XOCO chocolate packaging">
                             </picture>
                             <h4>XOCO Chocolate Truffles</h4>
-                            <p class="grid-space">Branding and packaging design</p>
+                            <p class="subhead">Branding and packaging design</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/eftn-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/eftn-cover-sm.jpg 1x, images/eftn-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/eftn-cover.jpg" alt="book project">
                             </picture>
                             <h4>Escape From the Noise</h4>
-                            <p class="grid-space">Publication design</p>
+                            <p class="subhead">Publication design</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/ahc-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/ahc-cover-sm.jpg 1x, images/ahc-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/ahc-cover.jpg" alt="Austin History Center project">
                             </picture>
                             <h4>Austin History Center</h4>
-                            <p class="grid-space">User Experience research and design</p>
+                            <p class="subhead">User Experience research and design</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/moontowers-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/moontowers-cover-sm.jpg 1x, images/moontowers-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/moontowers-cover.jpg" alt="moonlight towers project">
                             </picture>
                             <h4>Austin's Moonlight Towers</h4>
-                            <p class="grid-space">Interactive publication design</p>
+                            <p class="subhead">Interactive publication design</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="col-xs-12 col-sm-6">
                             <picture>
                                 <source media="(min-width: 401px)" srcset="images/sevin-cover.jpg">
                                 <source media="(max-width: 400px)" srcset="images/sevin-cover-sm.jpg 1x, images/sevin-cover.jpg 2x">
                                 <img class="img-responsive center-block" src="images/sevin-cover.jpg" alt="sevin dust project">
                             </picture>    
                             <h4>Sevin Dust</h4>
-                            <p class="grid-space">Advertisement</p>
+                            <p class="subhead">Advertisement</p>
+                        </div>
+                    </div>
+                    <div class="row text-center white-space">
+                        <a href="#top" class="social-icons"><i class="ion-chevron-up"></i></a>
+                    </div>
+                    <div class="row text-center white-space">
+                        <a href="#contact" class="social-icons"><i class="ion-chevron-down"></i></a>
+                    </div>  
+            </section>
+            <div class="container">
+                <div class="row text-center">
+                    <hr id="contact">
+                </div>
+            </div>
+            <section id="contact-form" class="container">
+                <div class="row white-space">
+                    <div class="col-md-12 text-center">
+                        <h2 class="heading">Contact Me</h2>
+                    </div>    
+                    <div id="socmedia" class="row">
+                        <div class="col-xs-12 text-center">
+                            <a href="https://www.linkedin.com/in/armando-garcia-6252a788" class="social-icons">
+                                <i class="ion-social-linkedin"></i>
+                            </a>
+                            <a href="http://instagram.com/armgar" class="social-icons">
+                                <i class="ion-social-instagram"></i>
+                            </a>
+                            <a href="http://twitter.com/armgardesign" class="social-icons">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                            <a href="https://github.com/armgar" class="social-icons">
+                                <i class="ion-social-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p class="intro">Please feel free to contact me if you have any questions about my work. Leave your name, email and a short message in the fields below.</p>
+                    </div>
+                </div>
+                <div id="form" class="text-center">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <label for="name">What's your first and last name?</label>
+                            <input type="text" name="name" id="name" placeholder="" required>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <label for="email">Where can I send you an e-mail?</label>
+                            <input type="email" name="email" id="email" placeholder="" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <hr>
+                        <div class="col-xs-12">
+                            <label for="subject">Do you like subject lines?</label>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="subject" name="subject" id="subject" placeholder="">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="message">What do you want to say?</label>
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea name="message" id="message" placeholder="" required></textarea>
+                        </div>
+                    </div>    
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <a href="https://www.linkedin.com/in/armando-garcia-6252a788" class="social-icons"><i class="ion-social-linkedin"></i></a>
-                            <a href="http://instagram.com/armgar" class="social-icons"><i class="ion-social-instagram"></i></a>
-                            <a href="http://twitter.com/armgardesign" class="social-icons"><i class="ion-social-twitter"></i></a>
-                        </div>
+                            <input type="submit" value="Send it in!" onclick="alert('Thank you!')">
+                        </div>  
                     </div>
-                </div>    
+                    <div class="row text-center">
+                        <a href="#top" class="social-icons"><i class="ion-chevron-up"></i></a>
+                    </div>
+                </div>       
             </section>
-            <footer>
-                <div class="row nav footer">
+            <div class="container">
+                <div class="row text-center">
+                    <hr>
+                </div>
+            </div>
+            <footer class="container">
+                <div class="row footer">
                     <div class="col-xs-6">©2016 Armando Garcia</div>
                     <div class="col-xs-6 text-right"><a href="#top" class="link-backtotop">Back to top</a></div>
                 </div>
