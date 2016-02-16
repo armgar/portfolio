@@ -13,20 +13,29 @@ body {
 }
 
 /* Images and icons */
-.img {}
-
 .hero {
-    padding-bottom: 40px;
-    padding-top: 15px;
+    margin: 10px auto;
+}
+
+.image {
+    margin-top: 35px;
 }
 
 hr {
+    margin: 5px auto;
     border: 2px dashed #333399;
-    width: 90%;
+    width: 50%;
 }
 
-#socmedia {
-    margin: 20px auto;
+hr.rule-first {
+    margin: 0 auto 40px auto;
+}
+
+.services-icons {
+    color: #ff6633;
+    display: inline; 
+    font-size: 200%;
+    text-decoration: none;
 }
 
 .social-icons,
@@ -36,8 +45,7 @@ a.social-icons:visited {
     display: inline; 
     font-size: 200%;
     text-decoration: none;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 5px 25px;
 }
 
 a.social-icons:hover,
@@ -48,49 +56,120 @@ a.social-icons:active {
 }
     
 /* Sections */
+#top,
+#about,
+#skills,
+#portfolio,
+#contact {
+    padding-top: 50px;
+}
+
+#tagline {
+    margin: 15px auto;
+}
+
+#about,
+#form {
+    max-width: 93%;
+}
+
+.small-col {
+    margin: 10px auto 30px auto;
+}
+
 #portfolio {
     max-width: 90%;
+    margin: 0 auto 40px auto; 
 }
 
-.white-space {
-	margin: 25px auto;
+header,
+#form {
+    margin: 0 auto 10px auto;
 }
 
-/* Headings and typography */
-h5 {
-    font-size: 125%;
-    letter-spacing: 0.5px;
-    line-height: 160%;
+#socmedia {
+    margin: 30px auto 0 auto;
+    padding: auto;
 }
 
-.intro {
-    font-size: 115%;
-    letter-spacing: 0.5px;
-    line-height: 160%;
-    margin: 5px auto;
+footer {
+    margin: 30px auto 15px auto;
 }
 
-.heading {
+/* --------------- Headings and typography --------------- */
+h1.name {
+    font-size: 1.75em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.6em;
+}
+
+p.intro {
+    font-size: 1.25em;
+    letter-spacing: 0.02em;
+    line-height: 1.45em;
+    margin: 15px auto;
+}
+
+.name-break {
+    display: none;
+}
+
+p.learn-more {
     color: #fdff1d;
-    font-size: 1.5em;
-    letter-spacing: 0.25px;
-}
-
-h4 {
-    font-size: 140%;
-    font-style: italic;
-    margin: 3% auto 1% auto;
-    padding-top: 2px;
-}
-
-.subhead {
     font-size: 90%;
-    margin-bottom: 7.5%;
+    margin: 20px auto 0 auto;
 }
 
-.footer {
-    padding-bottom: 15px;
-    padding-top: 15px; 
+p.about-me,
+p.contact-intro {
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    line-height: 1.75em;
+    margin: 30px auto;
+}
+
+p.about-me:last-child {
+    margin-bottom: 50px;
+}
+
+h2.section-head {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    margin: 35px auto 30px auto;
+}
+
+h3 {}
+
+h4.project-name,
+h4.services-head {
+    font-family: "Lato", Calibri, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.05em;
+    letter-spacing: 0.2em;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+h5.subhead {
+    font-size: 95%;
+    line-height: 95%;
+}
+
+p.services {
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    line-height: 1.6em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.text-footer {
     font-size: 75%;
 }
 
@@ -100,6 +179,10 @@ h4 {
     padding-bottom: 15px;
     padding-top: 15px; 
 	font-size: 90%;
+}
+
+.button {
+    margin: 30px auto;
 }
 
 .text-logo,
@@ -137,51 +220,50 @@ a.link-backtotop:active {
 a.link-portfolio:link,
 a.link-portfolio:visited,
 input[type=submit] {
-    color: #fdff1d;
-    font-weight: 700;
-    line-height: 1.75em;
-    font-size: 1.5em;
-    letter-spacing: 1px;
+    font-family: "Lato", Calibri, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #ff6633;
+    border: 2px solid #ff6633;
+    font-size: 1em;
+    letter-spacing: 0.2em;
     text-decoration: none;
-    border: 1px solid #fdff1d;
     border-radius: 2px;
-    padding: 15px 32px;
-    margin-bottom: 30px;
-    max-width: 200px;
+    padding: 15px 20px;
+    max-width: 300px;
 }
 
 a.link-portfolio:hover,
 a.link-portfolio:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    color: #ff6633;
-    border: 1px solid #ff6633;  
-    font-style: italic;
-    text-decoration: underline;
+    color: #333399;
+    background-color: #fdff1d;
+    border: 1px solid #fdff1d;
     transition: 0.5s;
 }
 
 /* Contact form */
-#form {
-    width: 90%;
-    margin: 40px auto 0px auto;
-}
-
 label {
     font-style: italic;
-    font-size: 125%;    
+    font-size: 115%;    
     padding-bottom: 5px;
+}
+
+label,
+input,
+select,
+textarea {
+    width: 100%;
 }
 
 input,
 select,
 textarea {
+    padding: 15px;
     color: #ecf0f1;
     border: none;
     background-color: #12124c;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
+    margin: 0 auto 25px auto;
 }
 
 textarea {
@@ -207,19 +289,14 @@ input[type=submit]:focus {
     font-size: 120%;
 }
 
-/* iPhone 6 + below 376px */
-@media (max-width: 375px) {
-    h5,
-    .intro {
-        font-size: 105%;
-        letter-spacing: 0.25px;
-        line-height: 140%;
+/* ---------------- iPhone 6 Plus (below 415px) ---------------- */
+@media screen and (max-width: 415px) {
+    .name-break {
+        display: inline;
     }
 
-    .link-portfolio,
-    a.link-portfolio:link,
-    a.link-portfolio:visited {
-        font-size: 1.25em;
+    h5.subhead {
+        display: none;
     }
 
     .social-icons,
@@ -232,89 +309,129 @@ input[type=submit]:focus {
     label {
         font-size: 105%;
     }
-
-    input,
-    select,
-    textarea {
-        margin-bottom: 20px;
-    }
 }
 
-/* iPad + 750px and up */
-@media (min-width: 750px) {
-    .heading {
-        font-size: 150%;
-        letter-spacing: 1px;
-        padding-bottom: 10px;
+/* Device on landscape orientation  */
+@media screen and (min-width: 416px) and (max-width: 767px) {
+    h1.name {
+        font-size: 105%;
+        font-weight: normal;
+        letter-spacing: 0.25px;
+        margin: 25px auto 30px auto;
+        max-width: 95%;
+    }
+
+    p.intro {
+        line-height: 100%;
     }
 
     #portfolio {
-        max-width: 80%;
+        max-width: 95%;
     }
 
-    h5,
-    .intro {
-        max-width: 85%;
-        margin: 5px auto;
+    #form {
+        max-width: 90%;
     }
-    
+
+    h4.project-name {
+        font-size: 85%;
+        padding-bottom: 20px;
+    }
+
+    h5.subhead {
+        display: none;
+    }
+
+    p.services {
+        font-size: 115%;
+        max-width: 60%;
+    }
+
+    .image {
+        max-width: 50%;
+    }
+}
+
+/* Large tablet and device on vertical orientation */
+@media screen and (min-width: 768px) {
+    #about,
+    #form {
+        max-width: 75%;
+    }
+
+    p.intro {
+        font-size: 125%;
+    }
+
+    p.services {
+        font-size: 1.05em;
+    }
+
     nav {
         font-size: 125%;
     }
 
-    #form {
-        width: 75%;
-    }
-
     label {
-        font-size: 115%;
+        font-size: 125%;
     }
 
     input,
     select,
     textarea {
-        margin-bottom: 40px;
+        padding: 10px;    
     }
-}
+}        
 
 /* Large devices (1000px and up) */
-@media (min-width: 1000px) {
-    h4 {
-        font-size: 175%;
-        letter-spacing: 1px;
+@media screen and (min-width: 1000px) {
+    hr {
+        width: 80%;
     }
 
-    .subhead {
-        font-size: 105%;
+    h1.name {
+        font-size: 2.25em;
     }
 
-    .heading {
-        font-size: 170%;
+    p.intro,
+    p.contact-intro {
+        font-size: 155%;
         letter-spacing: 1px;
+        line-height: 170%;
+    }
+
+    h2.section-head {
+        font-size: 2em;
+        margin: 60px auto 50px auto;
+    }
+
+    h4.services-head {
+        padding-top: 20px;
+    }
+
+    p.services {
+        font-size: 1.4em;
+        letter-spacing: 0.03em;
+        line-height: 1.7em;
+        padding-top: 10px;
         padding-bottom: 10px;
+        width: 80%;
     }
 
-    #form {
-        max-width: 70%;
+    p.about-me,
+    p.contact-intro {
+        font-size: 1.35em;
+        letter-spacing: 0.03em;
+        line-height: 1.95em;
     }
 
-    h5,
-    .intro {
-        width: 90%;
+    h5.subhead {
+        font-size: 115%;
+        letter-spacing: 0.25px;
     }
-
-    h5,
-    .intro,
-    label {
-        font-size: 130%;
-        letter-spacing: 1px;
-        line-height: 160%;
-    }
-
 }
-
 /*  Blue #333399
     Dark Blue #12124c    
     Warm Gray #ecf0f1   
     Yellow #fdff1d  
-    Orange #ff6633  */
+    Orange #ff6633
+    Pink #ea6b64  */
