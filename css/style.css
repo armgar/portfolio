@@ -12,7 +12,7 @@ body {
     background: linear-gradient(#333399, #12124c); /* Standard syntax */
 }
 
-/* Images and icons */
+/* -------------------- Images and icons ------------------ */
 .hero {
     margin: 10px auto;
 }
@@ -24,7 +24,7 @@ body {
 hr {
     margin: 5px auto;
     border: 2px dashed #333399;
-    width: 50%;
+    width: 40%;
 }
 
 hr.rule-first {
@@ -32,20 +32,21 @@ hr.rule-first {
 }
 
 .services-icons {
-    color: #ff6633;
+    font-size: 2.5em;
+    color: #ea6b64;
     display: inline; 
-    font-size: 200%;
     text-decoration: none;
 }
 
-.social-icons,
+a.social-icons,
 a.social-icons:link,
 a.social-icons:visited {
     color: #fdff1d;
     display: inline; 
-    font-size: 200%;
+    font-size: 2.25em;
     text-decoration: none;
-    padding: 5px 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 a.social-icons:hover,
@@ -55,7 +56,7 @@ a.social-icons:active {
     transition: 0.75s;
 }
     
-/* Sections */
+/* ---------------------- Sections ---------------------- */
 #top,
 #about,
 #skills,
@@ -69,10 +70,11 @@ a.social-icons:active {
 }
 
 #about,
-#form {
+#contact {
     max-width: 93%;
 }
 
+.services-row,
 .small-col {
     margin: 10px auto 30px auto;
 }
@@ -97,28 +99,37 @@ footer {
 }
 
 /* --------------- Headings and typography --------------- */
-h1.name {
-    font-size: 1.75em;
+.nav {
     font-weight: 700;
-    letter-spacing: 0.08em;
-    line-height: 1.6em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
 }
 
-p.intro {
-    font-size: 1.25em;
-    letter-spacing: 0.02em;
-    line-height: 1.45em;
-    margin: 15px auto;
+h1.intro {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+    padding-left: 5%;
+    margin: 15px auto 25px auto;
+}
+
+.name {
+    font-weight: 700;
 }
 
 .name-break {
-    display: none;
+        display: inline;
 }
 
 p.learn-more {
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.01em;
+    margin: 15px auto 0 auto;
+}
+
+.arrow {
     color: #fdff1d;
-    font-size: 90%;
-    margin: 20px auto 0 auto;
 }
 
 p.about-me,
@@ -155,8 +166,9 @@ h4.services-head {
 }
 
 h5.subhead {
-    font-size: 95%;
-    line-height: 95%;
+    display: none;
+    font-size: 0.95em;
+    line-height: 1em;
 }
 
 p.services {
@@ -170,34 +182,52 @@ p.services {
 }
 
 .text-footer {
-    font-size: 75%;
+    font-size: 0.8em;
+    letter-spacing: 0.01em;
 }
 
-/* Navigation and links */
+a.link-backtotop,
+a.link-backtotop:link,
+a.link-backtotop:visited {
+    color: #ecf0f1;
+}
+
+/* ------------------------- links ----------------------- */
 .nav {
     background-color: #333399;
     padding-bottom: 15px;
-    padding-top: 15px; 
-	font-size: 90%;
+    padding-top: 15px;
 }
 
 .button {
     margin: 30px auto;
 }
 
-.text-logo,
+a.text-logo,
 a.text-logo:link,
-a.text-logo:visited,
-.link-contact,
-a.link-contact:link,
-a.link-contact:visited,
-.link-backtotop,
-a.link-backtotop:link,
-a.link-backtotop:visited {
-	font-weight: 700;
-	color: #ecf0f1;
-	letter-spacing: 1px;
+a.text-logo:visited {
+    font-size: 1em;
     text-decoration: none;
+    color: #ecf0f1;
+}
+
+a.link-contact,
+a.link-contact:link,
+a.link-contact:visited {
+    font-size: 0.75em;
+    font-family: "Lato", Calibri, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 5px 10px;
+    border: 0.5px solid;
+}
+
+a.link-contact:hover,
+a.link-contact:active {
+    color: #333399;
+    background-color: #fdff1d;
 }
 
 a.text-logo:hover,
@@ -206,13 +236,10 @@ a.text-logo:active {
     text-decoration: none;
 }
 
-a.link-contact:hover,
-a.link-contact:active,
 a.link-backtotop:hover,
 a.link-backtotop:active {
-    color: #ff6633;
-    font-style: italic;
-    text-decoration: underline;
+    color: #fdff1d;
+    text-decoration: none;
     transition: 0.75s;
 }
 
@@ -220,14 +247,13 @@ a.link-backtotop:active {
 a.link-portfolio:link,
 a.link-portfolio:visited,
 input[type=submit] {
+    font-size: 1em;
     font-family: "Lato", Calibri, Arial, sans-serif;
     text-transform: uppercase;
-    color: #ff6633;
-    border: 2px solid #ff6633;
-    font-size: 1em;
     letter-spacing: 0.2em;
     text-decoration: none;
-    border-radius: 2px;
+    color: #ff6633;
+    border: 2px solid #ff6633;
     padding: 15px 20px;
     max-width: 300px;
 }
@@ -242,10 +268,11 @@ input[type=submit]:active {
     transition: 0.5s;
 }
 
-/* Contact form */
+/* ----------------------- Contact form ------------------ */
 label {
     font-style: italic;
-    font-size: 115%;    
+    font-size: 1em;
+    letter-spacing: 0.03em;
     padding-bottom: 5px;
 }
 
@@ -289,90 +316,104 @@ input[type=submit]:focus {
     font-size: 120%;
 }
 
-/* ---------------- iPhone 6 Plus (below 415px) ---------------- */
-@media screen and (max-width: 415px) {
-    .name-break {
-        display: inline;
-    }
-
-    h5.subhead {
-        display: none;
-    }
-
-    .social-icons,
-    a.social-icons:link,
-    a.social-icons:visited {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    label {
-        font-size: 105%;
-    }
-}
-
-/* Device on landscape orientation  */
-@media screen and (min-width: 416px) and (max-width: 767px) {
-    h1.name {
-        font-size: 105%;
-        font-weight: normal;
-        letter-spacing: 0.25px;
-        margin: 25px auto 30px auto;
-        max-width: 95%;
-    }
-
-    p.intro {
-        line-height: 100%;
-    }
-
+/* ---------------------- Breakpoint at 375px ---------------------- */
+@media (min-width: 375px) {
     #portfolio {
         max-width: 95%;
     }
 
-    #form {
-        max-width: 90%;
+    h1.intro {
+        text-align: center;
+        padding-left: 0;
     }
 
-    h4.project-name {
-        font-size: 85%;
-        padding-bottom: 20px;
-    }
-
-    h5.subhead {
+    .name-break {
         display: none;
     }
 
-    p.services {
-        font-size: 115%;
-        max-width: 60%;
+    p.learn-more {
+        font-size: 1em;
+        letter-spacing: 0.03em;
     }
 
-    .image {
-        max-width: 50%;
+    hr {
+        width: 20%;
     }
 }
 
-/* Large tablet and device on vertical orientation */
-@media screen and (min-width: 768px) {
+/* ---------------------- Breakpoint at 650px ---------------------- */
+
+@media (min-width: 650px) {
     #about,
-    #form {
-        max-width: 75%;
+    #contact {
+        width: 90%;
     }
 
-    p.intro {
-        font-size: 125%;
+    .small-col {
+        max-width: 33.333%;
+        margin: auto;
+    }
+
+    p.services {
+        font-size: 0.9em;
+        max-width: 80%;
+    }
+
+    .image {
+        width: 50%;
+    }
+}
+
+/* ---------------------- Breakpoint at 730px ---------------------- */
+
+@media (min-width: 730px) {
+    p.services {
+        font-size: 1em;
+        max-width: 80%;
+    }
+
+    #about,
+    #contact {
+        width: 93%;
+    }
+}
+
+/* ------- Breakpoint at 760px (Tablet vertical orientation) ------- */
+@media (min-width: 760px) {
+    .nav {
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+
+    #tagline {
+        margin: 40px auto;
+    }
+
+    h1.intro {
+        font-size: 1.7em;
+        letter-spacing: 0.06em;
+        line-height: 2em;
+        margin: 20px auto 25px auto;
+    }
+
+    #about,
+    #contact {
+        max-width: 76%;
     }
 
     p.services {
         font-size: 1.05em;
+        max-width: 95%; 
     }
 
-    nav {
-        font-size: 125%;
+    a.social-icons,
+    a.social-icons:link,
+    a.social-icons:visited {
+        padding: 5px 25px;
     }
 
     label {
-        font-size: 125%;
+        font-size: 1.2em;
     }
 
     input,
@@ -382,21 +423,17 @@ input[type=submit]:focus {
     }
 }        
 
-/* Large devices (1000px and up) */
-@media screen and (min-width: 1000px) {
-    hr {
-        width: 80%;
+/* --------------------- Breakpoint at 1000px and up) ----------------- */
+@media (min-width: 1000px) {
+    #tagline {
+        margin: 20px auto;
     }
-
-    h1.name {
-        font-size: 2.25em;
-    }
-
-    p.intro,
-    p.contact-intro {
-        font-size: 155%;
-        letter-spacing: 1px;
-        line-height: 170%;
+    
+    h1.intro {
+        font-size: 2em;
+        letter-spacing: 0.06em;
+        line-height: 2em;
+        margin: 15px auto;
     }
 
     h2.section-head {
@@ -406,6 +443,10 @@ input[type=submit]:focus {
 
     h4.services-head {
         padding-top: 20px;
+    }
+
+    .services-row {
+        margin: 30px auto;
     }
 
     p.services {
@@ -424,9 +465,35 @@ input[type=submit]:focus {
         line-height: 1.95em;
     }
 
+    h4.project-name {
+        font-size: 1.25em;
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+
     h5.subhead {
-        font-size: 115%;
-        letter-spacing: 0.25px;
+        display: inline;
+    }
+}
+
+/* --------------------- Breakpoint at 1199px and up) ----------------- */
+@media (min-width: 1000px) {
+    p.services { 
+        font-size: 1.4em;
+        letter-spacing: 0.03em;
+        line-height: 1.6em;
+    }
+
+    #about,
+    #contact {
+        max-width: 60%;
+    }
+
+    p.about-me,
+    p.contact-intro {
+        font-size: 1.6em;
+        letter-spacing: 0.03em;
+        line-height: 1.9em;
     }
 }
 /*  Blue #333399
