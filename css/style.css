@@ -18,7 +18,7 @@ body {
 }
 
 .image {
-    margin-top: 35px;
+    margin: 35px auto 0 auto;
 }
 
 hr {
@@ -118,7 +118,11 @@ h1.intro {
 }
 
 .name-break {
-        display: inline;
+    display: inline;
+}
+
+.intro-break {
+    display: inline;
 }
 
 p.learn-more {
@@ -150,7 +154,7 @@ h2.section-head {
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 35px auto 30px auto;
+    margin: 25px auto;
 }
 
 h3 {}
@@ -207,6 +211,7 @@ a.text-logo,
 a.text-logo:link,
 a.text-logo:visited {
     font-size: 1em;
+    font-weight: 700;
     text-decoration: none;
     color: #ecf0f1;
 }
@@ -243,7 +248,7 @@ a.link-backtotop:active {
     transition: 0.75s;
 }
 
-.link-portfolio,
+a.link-portfolio,
 a.link-portfolio:link,
 a.link-portfolio:visited,
 input[type=submit] {
@@ -327,10 +332,6 @@ input[type=submit]:focus {
         padding-left: 0;
     }
 
-    .name-break {
-        display: none;
-    }
-
     p.learn-more {
         font-size: 1em;
         letter-spacing: 0.03em;
@@ -338,6 +339,13 @@ input[type=submit]:focus {
 
     hr {
         width: 20%;
+    }
+}
+
+/* ---------------------- Breakpoint at 415px ---------------------- */
+@media (min-width: 415px) {
+    .name-break {
+        display: none;
     }
 }
 
@@ -421,7 +429,7 @@ input[type=submit]:focus {
     textarea {
         padding: 10px;    
     }
-}        
+}
 
 /* --------------------- Breakpoint at 1000px and up) ----------------- */
 @media (min-width: 1000px) {
@@ -438,7 +446,6 @@ input[type=submit]:focus {
 
     h2.section-head {
         font-size: 2em;
-        margin: 60px auto 50px auto;
     }
 
     h4.services-head {
@@ -460,8 +467,8 @@ input[type=submit]:focus {
 
     p.about-me,
     p.contact-intro {
-        font-size: 1.35em;
-        letter-spacing: 0.03em;
+        font-size: 1.2em;
+        letter-spacing: 0.02em;
         line-height: 1.95em;
     }
 
@@ -477,23 +484,37 @@ input[type=submit]:focus {
 }
 
 /* --------------------- Breakpoint at 1199px and up) ----------------- */
-@media (min-width: 1000px) {
-    p.services { 
-        font-size: 1.4em;
-        letter-spacing: 0.03em;
-        line-height: 1.6em;
-    }
-
+@media (min-width: 1199px) {
     #about,
     #contact {
         max-width: 60%;
     }
 
+    h1.intro {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+
+    .intro-break {
+        display: none;
+    }
+
     p.about-me,
     p.contact-intro {
-        font-size: 1.6em;
+        font-size: 1.5em;
         letter-spacing: 0.03em;
         line-height: 1.9em;
+    }
+
+    p.services { 
+        font-size: 1.2em;
+        letter-spacing: 0.02em;
+        line-height: 1.7em;
+    }
+
+    .services-icons {
+        font-size: 2.75em;
+
     }
 }
 /*  Blue #333399
