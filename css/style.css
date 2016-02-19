@@ -1,66 +1,33 @@
+/*  blue-main:      #333399;
+    blue-light:     #79c5ff;
+    blue-med:       #1f1f7e;
+    blue-dark:      #0f0f63;
+    text-body:     #fffef6;
+    text-dark:      #d9d9e0;
+    text-light:     #fff7a4;
+    link-orange:    #ff9200;
+    link-yellow:    #ffe800;
+    complemantary:  #ffbf00;
+    blue-dark-old:  #12124c;    */
+
 html,
 body {
     font-family: 'Droid Serif', serif;
-    color: #ecf0f1;
+    color: #fffef6;
 	font-weight: 400;
     text-rendering: optimizeLegibility;
-    padding-top: 20px;
     background: #333399; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#333399, #12124c); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#333399, #12124c); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#333399, #12124c); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#333399, #12124c); /* Standard syntax */
+    background: -webkit-linear-gradient(#333399, #1f1f7e, #0f0f63); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333399, #1f1f7e, #0f0f63); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333399, #1f1f7e, #0f0f63); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333399, #1f1f7e, #0f0f63);
 }
 
-/* -------------------- Images and icons ------------------ */
-.hero {
-    margin: 10px auto;
-}
-
-.image {
-    margin: 35px auto 0 auto;
-}
-
-hr {
-    margin: 5px auto;
-    border: 2px dashed #333399;
-    width: 40%;
-}
-
-hr.rule-first {
-    margin: 0 auto 40px auto;
-}
-
-.services-icons {
-    font-size: 2.5em;
-    color: #ea6b64;
-    display: inline; 
-    text-decoration: none;
-}
-
-a.social-icons,
-a.social-icons:link,
-a.social-icons:visited {
-    color: #fdff1d;
-    display: inline; 
-    font-size: 2.25em;
-    text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-a.social-icons:hover,
-a.social-icons:active {
-    color: #ff6633;
-    text-decoration: none;
-    transition: 0.75s;
-}
-    
 /* ---------------------- Sections ---------------------- */
 #top,
 #about,
 #skills,
-#portfolio,
+#work,
 #contact {
     padding-top: 50px;
 }
@@ -69,24 +36,26 @@ a.social-icons:active {
     margin: 15px auto;
 }
 
+#scroll,
 #about,
-#contact {
+#skills,
+#work {
+    margin-bottom: 100px;
+}
+
+#about,
+#contact,
+#work {
     max-width: 93%;
 }
 
 .services-row,
 .small-col {
-    margin: 10px auto 30px auto;
+    margin: 10px auto 25px auto;
 }
 
-#portfolio {
-    max-width: 90%;
-    margin: 0 auto 40px auto; 
-}
-
-header,
-#form {
-    margin: 0 auto 10px auto;
+#work {
+    margin: 0 auto 25px auto; 
 }
 
 #socmedia {
@@ -96,6 +65,12 @@ header,
 
 footer {
     margin: 30px auto 15px auto;
+}
+
+hr {
+    margin: 5px auto;
+    border: 2px dashed #79c5ff;;
+    width: 20%;
 }
 
 /* --------------- Headings and typography --------------- */
@@ -110,7 +85,7 @@ h1.intro {
     letter-spacing: 0.05em;
     line-height: 1.6em;
     padding-left: 5%;
-    margin: 15px auto 25px auto;
+    margin: 15px auto 15px auto;
 }
 
 .name {
@@ -132,8 +107,9 @@ p.learn-more {
     margin: 15px auto 0 auto;
 }
 
-.arrow {
-    color: #fdff1d;
+.color {
+    color: #fff7a4;
+    letter-spacing: 0.03em;
 }
 
 p.about-me,
@@ -150,11 +126,11 @@ p.about-me:last-child {
 
 h2.section-head {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #ecf0f1;
-    text-transform: uppercase;
+    color: #fffef6;
+    text-transform: lowercase;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 25px auto;
+    margin: 25px auto 10px auto;
 }
 
 h3 {}
@@ -176,12 +152,13 @@ h5.subhead {
 }
 
 p.services {
-    font-size: 1.2em;
-    letter-spacing: 0.03em;
-    line-height: 1.6em;
+    color: #d9d9e0;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
     padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80%;
+    padding-bottom: 5px;
+    width: 75%;
     margin: auto;
 }
 
@@ -193,10 +170,19 @@ p.services {
 a.link-backtotop,
 a.link-backtotop:link,
 a.link-backtotop:visited {
-    color: #ecf0f1;
+    color: #fffef6;
 }
 
-/* ------------------------- links ----------------------- */
+h2.portfolio-head {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fffef6;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    padding-top: 60px;
+}
+
+/* -------------------- Images, icons and links ------------------ */
 .nav {
     background-color: #333399;
     padding-bottom: 15px;
@@ -210,10 +196,12 @@ a.link-backtotop:visited {
 a.text-logo,
 a.text-logo:link,
 a.text-logo:visited {
+    color: #fffef6;
     font-size: 1em;
+    line-height: 1.75em;
     font-weight: 700;
     text-decoration: none;
-    color: #ecf0f1;
+    height: 100vh;
 }
 
 a.link-contact,
@@ -224,7 +212,7 @@ a.link-contact:visited {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ecf0f1;
+    color: #fffef6;
     padding: 5px 10px;
     border: 0.5px solid;
 }
@@ -232,18 +220,80 @@ a.link-contact:visited {
 a.link-contact:hover,
 a.link-contact:active {
     color: #333399;
-    background-color: #fdff1d;
+    background-color: #ffe800;
+    transition: 0.5s;
 }
 
 a.text-logo:hover,
 a.text-logo:active {
-    color: #ecf0f1;
+    color: #fffef6;
     text-decoration: none;
+}
+
+.hero {
+    margin: 10px auto;
+}
+
+.services-icons {
+    color: #ffbf00;
+    font-size: 2.5em;
+    display: inline; 
+    text-decoration: none;
+}
+
+a.arrow-icons,
+a.arrow-icons:link,
+a.arrow-icons:visited {
+    color: #fff7a4;
+}
+
+a.social-icons,
+a.social-icons:link,
+a.social-icons:visited {
+    color: #fff7a4;
+}
+
+a.arrow-icons,
+a.arrow-icons:link,
+a.arrow-icons:visited,
+a.social-icons,
+a.social-icons:link,
+a.social-icons:visited {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+a.arrow-top:hover,
+a.arrow-top:active,
+a.arrow-icons:hover,
+a.arrow-icons:active,
+a.social-icons:hover,
+a.social-icons:active {
+    color: #ffe800;
+    text-decoration: none;
+    transition: 0.75s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 a.link-backtotop:hover,
 a.link-backtotop:active {
-    color: #fdff1d;
+    color: #ffe800;
     text-decoration: none;
     transition: 0.75s;
 }
@@ -257,8 +307,8 @@ input[type=submit] {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-decoration: none;
-    color: #ff6633;
-    border: 2px solid #ff6633;
+    color: #ff9200;
+    border: 2px solid #ff9200;
     padding: 15px 20px;
     max-width: 300px;
 }
@@ -268,13 +318,56 @@ a.link-portfolio:active,
 input[type=submit]:hover,
 input[type=submit]:active {
     color: #333399;
-    background-color: #fdff1d;
-    border: 1px solid #fdff1d;
+    background-color: #ffe800;
+    border: 2px solid #ffe800;
     transition: 0.5s;
+}
+
+.image {
+    margin: 30px auto 0 auto;
+}
+
+.image:last-child {
+    margin: 30px auto 25px auto;
+}
+
+a.arrow-top {
+    margin-bottom: 15px;
+}
+
+a.arrow-bottom {
+    margin-top: 15px;
+}
+
+a.arrow-top,
+a.arrow-top:link,
+a.arrow-top:visited,
+a.arrow-bottom,
+a.arrow-bottom:link,
+a.arrow-bottom:visited {
+    color: #fff7a4;
+    font-family: "Lato", Calibri, Arial, sans-serif; 
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
 
 /* ----------------------- Contact form ------------------ */
 label {
+    color: #d9d9e0;
     font-style: italic;
     font-size: 1em;
     letter-spacing: 0.03em;
@@ -291,10 +384,10 @@ textarea {
 input,
 select,
 textarea {
-    padding: 15px;
-    color: #ecf0f1;
+    color: #fffef6;
     border: none;
-    background-color: #12124c;
+    background-color: #0f0f63;
+    padding: 15px;
     margin: 0 auto 25px auto;
 }
 
@@ -304,12 +397,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-    background-color: #333399;
+    background-color: #1f1f7e;
     outline: none;
 }
 
+input[type=submit],
 input[type=submit]:focus {
-    background-color: #12124c;
+    background-color: #0f0f63;
     outline: none;
 }
 
@@ -317,16 +411,12 @@ input[type=submit]:focus {
 #email,
 #subject,
 #message {
-    color: #ecf0f1;
+    color: #fffef6;
     font-size: 120%;
 }
 
 /* ---------------------- Breakpoint at 375px ---------------------- */
 @media (min-width: 375px) {
-    #portfolio {
-        max-width: 95%;
-    }
-
     h1.intro {
         text-align: center;
         padding-left: 0;
@@ -337,8 +427,17 @@ input[type=submit]:focus {
         letter-spacing: 0.03em;
     }
 
-    hr {
-        width: 20%;
+    a.social-icons,
+    a.social-icons:link,
+    a.social-icons:visited {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 400px) {
+    p.services {
+        width: 60%;
     }
 }
 
@@ -347,16 +446,30 @@ input[type=submit]:focus {
     .name-break {
         display: none;
     }
+
+    a.arrow-icons,
+    a.arrow-icons:link,
+    a.arrow-icons:visited,
+    a.social-icons,
+    a.social-icons:link,
+    a.social-icons:visited {
+        font-size: 2em;
+    }
+
+    p.services {
+        color: #d9d9e0;
+        font-size: 1.2em;
+        letter-spacing: 0.03em;
+        line-height: 1.6em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 80%;
+    }
 }
 
 /* ---------------------- Breakpoint at 650px ---------------------- */
 
 @media (min-width: 650px) {
-    #about,
-    #contact {
-        width: 90%;
-    }
-
     .small-col {
         max-width: 33.333%;
         margin: auto;
@@ -370,6 +483,10 @@ input[type=submit]:focus {
     .image {
         width: 50%;
     }
+
+    #work-portfolio {
+        height: 100vh;
+    }
 }
 
 /* ---------------------- Breakpoint at 730px ---------------------- */
@@ -378,11 +495,6 @@ input[type=submit]:focus {
     p.services {
         font-size: 1em;
         max-width: 80%;
-    }
-
-    #about,
-    #contact {
-        width: 93%;
     }
 }
 
@@ -405,8 +517,9 @@ input[type=submit]:focus {
     }
 
     #about,
-    #contact {
-        max-width: 76%;
+    #contact,
+    #work {
+        max-width: 83%;
     }
 
     p.services {
@@ -417,11 +530,11 @@ input[type=submit]:focus {
     a.social-icons,
     a.social-icons:link,
     a.social-icons:visited {
-        padding: 5px 25px;
+        padding: 0px 40px;
     }
 
     label {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     input,
@@ -483,21 +596,22 @@ input[type=submit]:focus {
     }
 }
 
-/* --------------------- Breakpoint at 1199px and up) ----------------- */
-@media (min-width: 1199px) {
-    #about,
-    #contact {
-        max-width: 60%;
-    }
-
+/* --------------------- Breakpoint at 1200px and up) ----------------- */
+@media (min-width: 1200px) {
     h1.intro {
-        font-size: 1.5em;
+        font-size: 1.75em;
         margin-bottom: 25px;
     }
 
     .intro-break {
         display: none;
     }
+
+    #about,
+    #contact,
+    #work {
+        max-width: 63%;
+    }    
 
     p.about-me,
     p.contact-intro {
@@ -517,9 +631,49 @@ input[type=submit]:focus {
 
     }
 }
-/*  Blue #333399
-    Dark Blue #12124c    
-    Warm Gray #ecf0f1   
-    Yellow #fdff1d  
-    Orange #ff6633
-    Pink #ea6b64  */
+
+/* --------------------- Breakpoint at 1515px and up) ----------------- */
+@media (min-width: 1515px) {
+    #about,
+    #contact,
+    #work {
+        width: auto;
+    }  
+}
+
+/* --------------------------- Hover & Fade -------------------------- */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}

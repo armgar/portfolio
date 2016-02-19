@@ -7,6 +7,7 @@
         <meta name="description" content="Armando Garcia is a graphic designer and web developer based in Austin, Texas.">
         <title>Armando Garcia</title>
         <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900" type="text/css">
@@ -43,7 +44,7 @@
                                 <a href="#top" class="text-logo">Armando Garcia</a>
                             </div>
                             <div class="col-xs-6 text-right">
-                                <a href="#contact" class="link-contact">Contact me</a>
+                                <a href="#contact" class="link-contact hvr-fade">Contact me</a>
                             </div>
                         </div>    
                     </div>
@@ -69,23 +70,23 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-12 button">
-                        <a href="#work" class="link-portfolio">See my featured work</a>
+                        <a href="#work" class="link-portfolio hvr-fade">See my featured work</a>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="container">
-            <div class="row" id="">
+        <div class="container" id="scroll">
+            <div class="row">
                 <div class="col-xs-12 text-center">
-                    <p class="learn-more">Or click the <span class="arrow">arrow</span> to learn more about me.</p>
-                    <a href="#about" class="social-icons"><i class="ion-chevron-down"></i></a>
+                    <p class="learn-more"><span class="color">Scroll</span> to learn more about me.</p>
+                    <a href="#about" class="arrow-icons"><i class="ion-chevron-down"></i></a>
                 </div>
             </div>
         </div>
         <section class="container" id="about">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h2 class="section-head">A bit about me</h2>
+                    <h2 class="section-head">About Me</h2>
                 </div>
                 <div class="col-xs-12 text-center">
                     <hr>
@@ -93,22 +94,28 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="about-me">I graduated with a Communication Design degree in 2014. After completing several internships, I worked at an agency that specializes in building creative campaigns, brand identities and public relations. Deadlines were tight and the projects varied between clients in non-profit, art, education and entertainment industries. I created branding and marketing for events, digital and print ads and publications alongside the designer and directors.</p>
-                    <p class="about-me">My latest goal is to complete Udacity's Front-End Web Developer Nanodegree program by the end of summer. I am determined to add web development to my skills set.</p>
+                    <p class="about-me js--wp--1">I graduated with a Communication Design degree in 2014. After completing several internships, I worked at an agency that specializes in building creative campaigns, brand identities and public relations. Deadlines were tight and the projects varied between clients in non-profit, art, education and entertainment industries. I created branding and marketing for events, digital and print ads and publications alongside the designer and directors.</p>
+                    <p class="about-me js--wp--1">My latest goal is to complete Udacity's Front-End Web Developer Nanodegree program by the end of summer. I am determined to add web development to my skills set.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <a href="#top" class="social-icons"><i class="ion-chevron-up"></i></a>
                 </div>
+                <div class="col-xs-12 text-center">
+                    <a href="#top" class="arrow-top">Back to top</a> 
+                </div>
             </div>
             <div class="row">    
+                <div class="col-xs-12 text-center">
+                    <a href="#skills" class="arrow-bottom">My Services</a>
+                </div>
                 <div class="col-xs-12 text-center">
                     <a href="#skills" class="social-icons"><i class="ion-chevron-down"></i></a>
                 </div>
             </div>
         </section>
-        <section class="container" id="skills">        
+        <section class="container" id="skills">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="section-head">My services</h3>
@@ -120,7 +127,7 @@
             <div class="row services-row text-center">
                 <div class="col-xs-12 col-sm-4 text-center small-col">
                     <h4 class="services-head">Branding</h4>                   
-                    <i class="ion-happy-outline services-icons"></i>
+                    <i class="ion-happy services-icons"></i>
                     <p class="services">Art Direction, Identity Systems, Logos, Marketing, Packaging, Typography, Writing</p>
                 </div>
                 <div class="col-xs-12 col-sm-4 text-center small-col">
@@ -146,54 +153,51 @@
             </div>
         </section>
         <section class="container" id="work">
-            <div id="portfolio">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <h2 class="section-head">Featured Work</h2>
-                    </div>
-                    <div class="col-xs-12 text-center">
-                        <hr>
-                    </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-head">Featured Work</h2>
                 </div>
-                <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 image">
-                        <picture>
-                            <source media="(min-width: 401px)" srcset="images/snapshot-cover.jpg">
-                            <source media="(max-width: 400px)" srcset="images/snapshot-cover-sm.jpg 1x, images/snapshot-cover.jpg 2x">
-                            <img class="img-responsive center-block" src="images/snapshot-cover.jpg" alt="snapshot magazine project">
-                        </picture>    
-                        <h4 class="project-name">Snapshot Magazine</h4>
-                        <h5 class="subhead">Branding and publication design</h5>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 image">
-                        <picture>
-                            <source media="(min-width: 401px)" srcset="images/xoco-cover.jpg">
-                            <source media="(max-width: 400px)" srcset="images/xoco-cover-sm.jpg 1x, images/xoco-cover.jpg 2x">
-                            <img class="img-responsive center-block" src="images/xoco-cover.jpg" alt="XOCO chocolate packaging">
-                        </picture>
-                        <h4 class="project-name">XOCO Chocolate Truffles</h4>
-                        <h5 class="subhead">Branding and packaging design</h5>
-                    </div>
+                <div class="col-xs-12 text-center">
+                    <hr>
                 </div>
-                <div class="row text-center">
-                    <div class="col-xs-12 col-sm-6 image">
-                        <picture>
-                            <source media="(min-width: 401px)" srcset="images/eftn-cover.jpg">
-                            <source media="(max-width: 400px)" srcset="images/eftn-cover-sm.jpg 1x, images/eftn-cover.jpg 2x">
-                            <img class="img-responsive center-block" src="images/eftn-cover.jpg" alt="book project">
-                        </picture>
-                        <h4 class="project-name">Escape From the Noise</h4>
-                        <h5 class="subhead">Publication design</h5>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 image">
-                        <picture>
-                            <source media="(min-width: 401px)" srcset="images/ahc-cover.jpg">
-                            <source media="(max-width: 400px)" srcset="images/ahc-cover-sm.jpg 1x, images/ahc-cover.jpg 2x">
-                            <img class="img-responsive center-block" src="images/ahc-cover.jpg" alt="Austin History Center project">
-                        </picture>
-                        <h4 class="project-name">Austin History Center</h4>
-                        <h5 class="subhead">User Experience research and design</h5>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 image hvr-grow">
+                    <picture>
+                        <source media="(min-width: 401px)" srcset="images/snapshot-cover.jpg">
+                        <source media="(max-width: 400px)" srcset="images/snapshot-cover-sm.jpg 1x, images/snapshot-cover.jpg 2x">
+                        <img class="img-responsive center-block" src="images/snapshot-cover.jpg" alt="snapshot magazine project">
+                    </picture>    
+                    <h4 class="project-name">Snapshot Magazine</h4>
+                    <h5 class="subhead">Branding and publication design</h5>
                 </div>
+                <div class="col-xs-12 col-sm-6 image hvr-grow">
+                    <picture>
+                        <source media="(min-width: 401px)" srcset="images/xoco-cover.jpg">
+                        <source media="(max-width: 400px)" srcset="images/xoco-cover-sm.jpg 1x, images/xoco-cover.jpg 2x">
+                        <img class="img-responsive center-block" src="images/xoco-cover.jpg" alt="XOCO chocolate packaging">
+                    </picture>
+                    <h4 class="project-name">XOCO Chocolate Truffles</h4>
+                    <h5 class="subhead">Branding and packaging design</h5>
+                </div>
+                <div class="col-xs-12 col-sm-6 image hvr-grow">
+                    <picture>
+                        <source media="(min-width: 401px)" srcset="images/eftn-cover.jpg">
+                        <source media="(max-width: 400px)" srcset="images/eftn-cover-sm.jpg 1x, images/eftn-cover.jpg 2x">
+                        <img class="img-responsive center-block" src="images/eftn-cover.jpg" alt="book project">
+                    </picture>
+                    <h4 class="project-name">Escape From the Noise</h4>
+                    <h5 class="subhead">Publication design</h5>
+                </div>
+                <div class="col-xs-12 col-sm-6 image hvr-grow">
+                    <picture>
+                        <source media="(min-width: 401px)" srcset="images/ahc-cover.jpg">
+                        <source media="(max-width: 400px)" srcset="images/ahc-cover-sm.jpg 1x, images/ahc-cover.jpg 2x">
+                        <img class="img-responsive center-block" src="images/ahc-cover.jpg" alt="Austin History Center project">
+                    </picture>
+                    <h4 class="project-name">Austin History Center</h4>
+                    <h5 class="subhead">User Experience research and design</h5>
+                </div>    
             </div>
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -215,18 +219,18 @@
                     <hr>
                 </div>
             </div>
-            <div id="socmedia" class="row text-center">
-                <div class="col-xs-12">
-                    <a href="https://www.linkedin.com/in/armando-garcia-6252a788" class="social-icons">
+            <div class="row" id="socmedia">
+                <div class="col-xs-12 text-center">
+                    <a href="https://www.linkedin.com/in/armando-garcia-6252a788" class="social-icons hvr-grow">
                         <i class="ion-social-linkedin"></i>
                     </a>
-                    <a href="http://instagram.com/armgar" class="social-icons">
+                    <a href="http://instagram.com/armgar" class="social-icons hvr-grow">
                         <i class="ion-social-instagram"></i>
                     </a>
-                    <a href="http://twitter.com/armgardesign" class="social-icons">
+                    <a href="http://twitter.com/armgardesign" class="social-icons hvr-grow">
                         <i class="ion-social-twitter"></i>
                     </a>
-                    <a href="https://github.com/armgar" class="social-icons">
+                    <a href="https://github.com/armgar" class="social-icons hvr-grow">
                         <i class="ion-social-github"></i>
                     </a>
                 </div>
