@@ -312,19 +312,19 @@ p.interests {
 }
 
 .image-one {
-    background: #fff url(../images/snapshot-cover.jpg) center;
+    background: #fff url(../images/ss-cover.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .image-two {
-    background: #fff url(../images/xoco-cover.jpg) center;
+    background: #fff url(../images/sw-cover.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .image-three {
-    background: #fff url(../images/eftn-cover.jpg) center;
+    background: #fff url(../images/pp-cover.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -336,13 +336,13 @@ p.interests {
 }
 
 .image-five {
-    background: #fff url(../images/moontowers-cover.jpg) center;
+    background: #fff url(../images/lc-cover.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .image-six {
-    background: #fff url(../images/sevin-cover.jpg) center;
+    background: #fff url(../images/more-cover.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -377,7 +377,7 @@ h4.project-name {
     font-family: ArquitectaBold, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.4em;
     letter-spacing: 0.125em;
     line-height: 1em;
     text-transform: uppercase;
