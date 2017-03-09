@@ -561,11 +561,22 @@ p.brief {
     margin: auto auto 30px auto;
 }
 
-p.personas {
-    font-size: 0.9em;
+p.personas,
+p.quote {
+    color: #fff7a4;
     letter-spacing: 0.01em;
     line-height: 1.5em;
-    margin: 10px 10px 25px 10px;
+}
+
+p.personas {
+    font-size: 0.9em;
+    padding: 10px 10px 0px 20px;
+}
+
+p.quote {
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 10px 10px 10px 20px;
 }
 
 /* -------------------------- links links links -------------------------- */
@@ -881,6 +892,10 @@ a.arrow-side:visited {
 
     p.services {
         font-size: 1em;
+    }
+
+    p.quote {
+        font-size: 2.25em;
     }
 }
 
