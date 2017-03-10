@@ -113,12 +113,12 @@
                             <div class="col-xs-12 col-sm-4 text-center services-col">
                                 <h4 class="section-sub-head">Print &amp; Digital</h4>
                                 <i class="ion-crop services-icons"></i>
-                                <p class="services">Advertisement, Editorial, Illustration, Infographics, Publications, Signage</p>
+                                <p class="services">Advertisement, Editorial, Email, Forms, Illustration, Infographics, Web Banners</p>
                             </div>
                             <div class="col-xs-12 col-sm-4 text-center services-col">
                                 <h4 class="section-sub-head">Interactive</h4>
                                 <i class="ion-network services-icons"></i>
-                                <p class="services">CSS, HTML, Web Design, Responsive Web Design, User Interaction Design</p>
+                                <p class="services">CSS, CSS3 Animations, Frameworks, HTML, Responsive Web Design &amp; Development</p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         <h3 class="section-head">Interests &amp; Hobbies</h3>
                         <div class="row services-row text-center">
                             <div class="col-xs-12 col-sm-4 interests-col">
-                                <p class="interests">collecting art objects &amp; prints</p>
+                                <p class="interests">art objects</p>
                                 <p class="interests">contemporary art</p>
                             </div>
                             <div class="col-xs-12 col-sm-4 interests-col">
@@ -136,7 +136,7 @@
                                 <p class="interests">drawing</p>
                             </div>
                             <div class="col-xs-12 col-sm-4 interests-col">
-                                <p class="interests">indie mags and zines</p>
+                                <p class="interests">books and zines</p>
                                 <p class="interests">painting</p>
                             </div>
                         </div>
@@ -261,37 +261,39 @@
                         <p class="contact-intro">Please feel free to write me if you have any questions about my work or services. Send me an email or submit your message after filling out the form.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <label for="name">First and last name:</label>
-                        <input type="text" name="name" id="name" placeholder="" required>
+                <form method="POST" name="contactform" action="contact-form-handler.php"> 
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="name">First and last name:</label>
+                            <input type="text" name="name" id="name" placeholder="" required>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="email">E-mail address:</label>
+                            <input type="email" name="email" id="email" placeholder="" required>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <label for="email">E-mail address:</label>
-                        <input type="email" name="email" id="email" placeholder="" required>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="subject">Link me to your site or leave a subject line:</label>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="subject" name="subject" id="subject" placeholder="">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <label for="subject">Link me to your site (if you have one):</label>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="message">Write me a message:</label>
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea name="message" id="message" placeholder="" required></textarea>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <input class="text-center" type="submit" value="Send it in!" onclick="alert('Thank you!')">
+                        </div>  
                     </div>
-                    <div class="col-xs-12">
-                        <input type="subject" name="subject" id="subject" placeholder="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <label for="message">Write me a message:</label>
-                    </div>
-                    <div class="col-xs-12">
-                        <textarea name="message" id="message" placeholder="" required></textarea>
-                    </div>
-                </div>    
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <input class="text-center" type="submit" value="Send it in!" onclick="alert('Thank you!')">
-                    </div>  
-                </div>
+                </form>    
             </div>
             <div class="container">
                 <div class="row">
@@ -332,7 +334,7 @@
         <footer class="container">
             <div class="row">
                 <div class="col-xs-12 text-footer text-center">
-                    <a href="#top" class="link-backtotop">©2016 Armando Garcia</a>
+                    <a href="#top" class="link-backtotop">©2017 Armando Garcia</a>
                 </div>
             </div>
         </footer>
