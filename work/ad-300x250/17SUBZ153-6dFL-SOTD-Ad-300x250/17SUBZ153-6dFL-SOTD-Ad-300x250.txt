@@ -1,0 +1,12 @@
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-logo.png" alt="subway" height="20" width="103" class="sw-logo">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-head.png" alt="$6 footlong sub of the day" height="105" width="278" class="sw-head">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-subhead.png" alt="$3.50 six-inch sub" height="24" width="130" class="sw-subhead">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-day.png" alt="Wednesday" height="37" width="212" class="sw-day">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-subname.png" alt="sub" height="16" width="104" class="sw-subname">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-sub.png" alt="sub" height="85" width="269" class="sw-sub">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-head-two.png" alt="7 days. 7 footlongs subs. Each $6." height="87" width="187" class="sw-head-two">
+<img src="17SUBZ153-6dFL-SOTD-Ad-300x250/images/sw-cta.png" alt="order now" height="30" width="168" class="sw-cta">
+<div id="primary-background"></div>
+<div id="legal">
+	<span>Limited time only. <span id='marketlegal'>Valid only at participating locations. </span> Additional charges for Extras and Deluxe. Plus tax. No additional discounts or coupons may be applied. SUBWAY® is a Registered Trademark of Subway IP Inc. ©2017 Subway IP Inc.</span>
+</div>

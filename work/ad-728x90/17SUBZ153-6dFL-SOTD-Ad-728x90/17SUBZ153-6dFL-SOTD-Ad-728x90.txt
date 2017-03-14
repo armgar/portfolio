@@ -1,0 +1,12 @@
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-logo.png" alt="subway" height="24" width="121" class="sw-logo">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-head.png" alt="$6 footlong sub of the day" height="71" width="477" class="sw-head">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-subhead.png" alt="$6 footlong sub of the day" height="21" width="117" class="sw-subhead">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-head-two.png" alt="7 days. 7 footlong subs. Each $6." height="33" width="472" class="sw-head-two">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-day.png" alt="monday" height="29" width="111" class="sw-day">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-subname.png" alt="sweet onion chicken teriyaki" height="15 " width="213" class="sw-subname">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-sub.png" alt="sub" height="76" width="224" class="sw-sub">
+<img src="17SUBZ153-6dFL-SOTD-Ad-728x90/images/sw-cta.png" alt="order now" height="26" width="146" class="sw-cta">
+<div id="primary-background"></div>
+<div id="legal">
+	<span>Limited time only. <span id='marketlegal'>Valid only at participating locations. </span> Additional charge for Extras and Deluxe. Plus tax. No additional discounts or coupons may be applied. SUBWAY® is a Registered Trademark of Subway IP Inc. ©2017 Subway IP Inc.</span>
+</div>
